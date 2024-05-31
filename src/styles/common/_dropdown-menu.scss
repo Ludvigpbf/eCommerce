@@ -1,0 +1,30 @@
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  width: 9rem;
+  right: 0;
+  z-index: 1;
+  .dropdown-ul {
+    margin: 0.6rem 0;
+    background-color: rgb(247, 217, 177);
+    list-style: none;
+    padding: 1rem 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 0.5rem 1rem 0.1rem rgba(101, 101, 101, 0.2);
+    .dropdown-li {
+      display: flex;
+      margin: 0.5rem 0;
+      width: 100%;
+      .dropdown-link {
+        padding: 0.3rem 1rem;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        &:hover {
+          text-decoration: underline;
+          background-color: rgb(230, 202, 166);
+        }
+      }
+    }
+  }
+}

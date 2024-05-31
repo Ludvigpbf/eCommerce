@@ -1,0 +1,12 @@
+@mixin desktop($width) {
+  @if ($width) {
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+

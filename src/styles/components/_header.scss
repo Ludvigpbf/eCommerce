@@ -1,0 +1,108 @@
+header {
+  width: 100%;
+  @include desktop(1200px) {
+    background-color: rgb(255, 233, 204);
+
+    position: relative;
+  }
+  .header-banner {
+    display: flex;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    height: 2rem;
+    @include desktop(1200px) {
+      padding: 0 5rem;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include desktop(1200px) {
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 1200px;
+      height: 4rem;
+      h1 {
+        margin: 0;
+        @include lato-font(900);
+        font-size: 2rem;
+      }
+    }
+  }
+  .menu-container {
+    @include desktop(1200px) {
+      position: absolute;
+      right: 3rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 8rem;
+      justify-content: space-between;
+      bottom: 0.5rem;
+      .icon-container {
+        position: relative;
+        border-radius: 0.3rem;
+        padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+
+        &:hover {
+          background-color: rgb(247, 217, 177);
+          .dropdown-menu {
+            display: block;
+          }
+          .dropdown-cart {
+            display: block;
+          }
+        }
+        .total-items {
+          position: absolute;
+          font-size: 0.7rem;
+          top: 0.5rem;
+          @include lato-font(600);
+        }
+      }
+    }
+  }
+  @include desktop(1200px) {
+    .nav-desktop {
+      margin: 0 auto;
+      max-width: 1200px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          a {
+            padding: 1rem 1rem;
+            border-radius: 0.5rem 0.5rem 0 0;
+            min-width: 4rem;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            @include lato-font(400);
+            font-size: 1rem;
+            &:hover {
+              background-color: rgb(247, 217, 177);
+            }
+          }
+        }
+      }
+    }
+  }
+}

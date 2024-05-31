@@ -1,0 +1,13 @@
+@import "./common/index";
+@import "./views/index";
+@import "./components/index";
+
+body {
+  margin: 0;
+  background-color: rgb(247, 247, 247);
+  #root {
+    display: flex;
+    flex-direction: column;
+    @include lato-font(400);
+  }
+}

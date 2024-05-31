@@ -1,0 +1,45 @@
+@mixin lato-font($weight, $style: normal) {
+  font-family: "Lato", sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+.lato-thin {
+  @include lato-font(100);
+}
+
+.lato-light {
+  @include lato-font(300);
+}
+
+.lato-regular {
+  @include lato-font(400);
+}
+
+.lato-bold {
+  @include lato-font(700);
+}
+
+.lato-black {
+  @include lato-font(900);
+}
+
+.lato-thin-italic {
+  @include lato-font(100, italic);
+}
+
+.lato-light-italic {
+  @include lato-font(300, italic);
+}
+
+.lato-regular-italic {
+  @include lato-font(400, italic);
+}
+
+.lato-bold-italic {
+  @include lato-font(700, italic);
+}
+
+.lato-black-italic {
+  @include lato-font(900, italic);
+}
